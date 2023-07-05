@@ -28,10 +28,10 @@ while again != "n":
     total_tentativas.append(tentativas)
     print("-----------------------------------")
     print("Parabéns você acertou!")
-    print("Você utilizou %d tentativas"%len(tentativas))
+    print("Você utilizou {} tentativas".format(len(tentativas)))
     again = input("Deseja continuar? (s/n) ")
     print("-----------------------------------")
     print()
     tentativas=[]
 for i in range (0, len(total_tentativas), +1):
-    print("Na %dª rodada foram feitas %d tentativas."%(i+1,len(total_tentativas[i])))
+    print("Na {}ª rodada foram feitas {} tentativas.".format(i+1,len(total_tentativas[i])))
